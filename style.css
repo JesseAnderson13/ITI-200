@@ -91,3 +91,33 @@ a{
 #node3i { top: 40%; left: 75%; background-color: #384b38; transform: translate(-50%, -50%); }
 #node4i { top: 85%; left: 35%; background-color: #384b38; transform: translate(-50%, -50%); }
 #node5i { top: 85%; left: 65%; background-color: #384b38; transform: translate(-50%, -50%); }
+
+body {
+    background-color: #404040;
+}
+
+.card {
+    background-color: #212121;
+    border: none;
+}
+
+.card-body {
+    color: azure;
+}
+
+.btn-success {
+    background-color: #1DB954;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #17b85a;
+}
+
+.text-muted {
+    color: #b3b3b3 !important;
+}
+
+.text-success {
+    color: #1DB954 !important;
+}
