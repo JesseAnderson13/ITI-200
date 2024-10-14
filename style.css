@@ -1,0 +1,135 @@
+.scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    color:#535353;
+}
+
+.card{
+    background-color: #1DB954;
+}
+
+.col-2{
+    background-color: black ;
+
+}
+
+.card-body{
+    background-color:#212121;
+    color: azure;
+}
+
+.card-header{
+    background-color:#121212;
+    color: azure;
+}
+
+.row{
+    justify-content: center;
+    margin: 60px; 
+}
+
+.col{
+    justify-content: center;
+}
+
+button{
+    background-color: #121212;
+}
+
+body {
+    
+	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
+}
+
+h6{
+float: right;
+}
+
+a{
+    color: #b3b3b3;
+}
+
+.about-text{
+    color:white;
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.node {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.central {
+    background-color: #7811d3;
+	top: 45%;
+	width: 160px;
+    height: 160px;
+}
+
+#node1a { top: 25%; left: 50%; background-color: #7811d3; transform: translate(-50%, -50%); }
+#node2a { top: 47%; left: 34%; background-color: #7811d3; transform: translate(-50%, -50%); }
+#node3a { top: 47%; left: 66%; background-color: #7811d3; transform: translate(-50%, -50%); }
+#node4a { top: 80%; left: 40%; background-color: #7811d3; transform: translate(-50%, -50%); }
+#node5a { top: 80%; left: 60%; background-color: #7811d3; transform: translate(-50%, -50%); }
+
+#node1i { top: 18%; left: 50%; background-color: #51445c; transform: translate(-50%, -50%); }
+#node2i { top: 42%; left: 30%; background-color: #51445c; transform: translate(-50%, -50%); }
+#node3i { top: 42%; left: 70%; background-color: #51445c; transform: translate(-50%, -50%); }
+#node4i { top: 85%; left: 37%; background-color: #51445c; transform: translate(-50%, -50%); }
+#node5i { top: 85%; left: 63%; background-color: #51445c; transform: translate(-50%, -50%); }
+
+.card {
+    background-color: #212121;
+    border: none;
+}
+
+.card-body {
+    color: azure;
+}
+
+.btn-success {
+    background-color: #7811d3;
+	color: #ffffff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #17b85a;
+}
+
+.text-muted {
+    color: #b3b3b3 !important;
+}
+
+.text-success {
+    color: #1DB954 !important;
+}
+
+.cinzel-main {
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cinzel-sub {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
