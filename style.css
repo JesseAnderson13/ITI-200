@@ -1,0 +1,93 @@
+.scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    color:#535353;
+}
+
+.card{
+    background-color: #1DB954;
+}
+
+.col-2{
+    background-color: black ;
+
+}
+
+.card-body{
+    background-color:#212121;
+    color: azure;
+}
+
+.card-header{
+    background-color:#121212;
+    color: azure;
+}
+
+.row{
+    justify-content: center;
+    margin: 60px; 
+}
+
+.col{
+    justify-content: center;
+}
+
+button{
+    background-color: #121212;
+}
+
+body{
+    background-color: #404040;
+}
+
+h6{
+float: right;
+}
+
+a{
+    color: #b3b3b3;
+}
+
+.about-text{
+    color:white;
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.node {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.central {
+    background-color: #11d311;
+	top: 45%;
+	width: 160px;
+    height: 160px;
+}
+
+#node1a { top: 20%; left: 50%; background-color: #11d311; transform: translate(-50%, -50%); }
+#node2a { top: 45%; left: 32%; background-color: #11d311; transform: translate(-50%, -50%); }
+#node3a { top: 45%; left: 68%; background-color: #11d311; transform: translate(-50%, -50%); }
+#node4a { top: 80%; left: 38%; background-color: #11d311; transform: translate(-50%, -50%); }
+#node5a { top: 80%; left: 62%; background-color: #11d311; transform: translate(-50%, -50%); }
+
+#node1i { top: 15%; left: 50%; background-color: #384b38; transform: translate(-50%, -50%); }
+#node2i { top: 40%; left: 25%; background-color: #384b38; transform: translate(-50%, -50%); }
+#node3i { top: 40%; left: 75%; background-color: #384b38; transform: translate(-50%, -50%); }
+#node4i { top: 85%; left: 35%; background-color: #384b38; transform: translate(-50%, -50%); }
+#node5i { top: 85%; left: 65%; background-color: #384b38; transform: translate(-50%, -50%); }
