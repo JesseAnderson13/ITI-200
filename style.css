@@ -72,6 +72,8 @@ a{
     align-items: center;
     font-size: 14px;
     text-align: center;
+    padding: 5 px;
+    margin: 5px;
 }
 
 .central {
