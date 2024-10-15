@@ -1,13 +1,13 @@
-let loginSubmitBtn = document.getElementById("loginSubmitBtn");
 let username = document.getElementById("username");
 let password = document.getElementById("password");
-loginSubmitBtn.addEventListener('click', loginSubmit);
 
-function loginSubmit() {
-	if ((username.value != "") && (password.value != "")){
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    if ((username.value != "") && (password.value != "")){
 		alert("Login Successful!");
+		window.location.href = "index.html";
 	}
 	else {
 		alert("Login failed! Please enter a username and password.");
 	}
-}
+});
