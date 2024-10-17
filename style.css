@@ -37,7 +37,10 @@ button{
 }
 
 body {
-    
+	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
+}
+
+.navbar {
 	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
 }
 
@@ -74,43 +77,45 @@ a{
     text-align: center;
     padding: 5 px;
     margin: 5px;
+	background-color: #352a3e;
+	transition: transform 0.75s ease, background-color 0.75s ease;
 }
 
 .central {
     background-color: #7811d3;
 	top: 45%;
-	width: 160px;
-    height: 160px;
+	width: 180px;
+    height: 180px;
 }
 
-#node1 { top: 10%; left: 46%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
-#node2 { top: 34%; left: 26%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
-#node3 { top: 34%; left: 66%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
-#node4 { top: 74%; left: 33%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
-#node5 { top: 74%; left: 59%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
+#node1 { top: 10%; left: 46%;}
+#node2 { top: 34%; left: 26%;}
+#node3 { top: 34%; left: 66%;}
+#node4 { top: 74%; left: 33%;}
+#node5 { top: 74%; left: 59%;}
 
-#node1.moveTop {
+#node1.animateTopNode {
 	transform: translateY(100px);
 	background-color: #7811d3;
 }
 
-#node2.moveTopLeft {
+#node2.animateTopLeftNode {
 	transform: translateX(140px) translateY(50px);
 	background-color: #7811d3;
 }
 
-#node3.moveTopRight {
+#node3.animateTopRightNode {
 	transform: translateX(-140px) translateY(50px);
 	background-color: #7811d3;
 }
 
-#node4.moveBottomLeft {
-	transform: translateX(115px) translateY(-50px);
+#node4.animateBottomLeftNode {
+	transform: translateX(80px) translateY(-70px);
 	background-color: #7811d3;
 }
 
-#node5.moveBottomRight {
-	transform: translateX(-115px) translateY(-50px);
+#node5.animateBottomRightNode {
+	transform: translateX(-80px) translateY(-70px);
 	background-color: #7811d3;
 }
 
@@ -130,7 +135,7 @@ a{
 }
 
 .btn-success:hover {
-    background-color: #17b85a;
+    background-color: #5c07a6;
 }
 
 .text-muted {
@@ -141,16 +146,23 @@ a{
     color: #1DB954 !important;
 }
 
-.cinzel-main {
-  font-family: "Cinzel", serif;
-  font-size: 22px;
-  font-weight: 500;
-  font-style: normal;
+.cinzel-heading {
+	font-family: "Cinzel", serif;
+	font-size: 30px;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.cinzel-nav-main {
+	font-family: "Cinzel", serif;
+	font-size: 22px;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .cinzel-sub {
-  font-family: "Cinzel", serif;
-  font-weight: 500;
-  font-style: normal;
+	font-family: "Cinzel", serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
