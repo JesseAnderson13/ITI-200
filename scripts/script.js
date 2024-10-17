@@ -1,3 +1,27 @@
+
+document.getElementById("node1").addEventListener("click", function() {
+            this.classList.toggle("moveTop");
+        });
+		
+document.getElementById("node2").addEventListener("click", function() {
+            this.classList.toggle("moveTopLeft");
+        });
+		
+document.getElementById("node3").addEventListener("click", function() {
+            this.classList.toggle("moveTopRight");
+        });
+		
+document.getElementById("node4").addEventListener("click", function() {
+            this.classList.toggle("moveBottomLeft");
+        });
+		
+document.getElementById("node5").addEventListener("click", function() {
+            this.classList.toggle("moveBottomRight");
+        });
+
+
+
+/*
 let node1 = document.getElementById('node1i');
 let node2 = document.getElementById('node2i');
 let node3 = document.getElementById('node3i');
@@ -54,3 +78,4 @@ function node5switch(){
 		node5.id = "node5i";
 	}
 }
+*/
