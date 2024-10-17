@@ -83,17 +83,36 @@ a{
     height: 160px;
 }
 
-#node1a { top: 25%; left: 50%; background-color: #7811d3; transform: translate(-50%, -50%); }
-#node2a { top: 47%; left: 34%; background-color: #7811d3; transform: translate(-50%, -50%); }
-#node3a { top: 47%; left: 66%; background-color: #7811d3; transform: translate(-50%, -50%); }
-#node4a { top: 80%; left: 40%; background-color: #7811d3; transform: translate(-50%, -50%); }
-#node5a { top: 80%; left: 60%; background-color: #7811d3; transform: translate(-50%, -50%); }
+#node1 { top: 10%; left: 46%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
+#node2 { top: 34%; left: 26%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
+#node3 { top: 34%; left: 66%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
+#node4 { top: 74%; left: 33%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
+#node5 { top: 74%; left: 59%; background-color: #51445c; transition: transform 0.75s ease, background-color 0.75s ease;}
 
-#node1i { top: 18%; left: 50%; background-color: #51445c; transform: translate(-50%, -50%); }
-#node2i { top: 42%; left: 30%; background-color: #51445c; transform: translate(-50%, -50%); }
-#node3i { top: 42%; left: 70%; background-color: #51445c; transform: translate(-50%, -50%); }
-#node4i { top: 85%; left: 37%; background-color: #51445c; transform: translate(-50%, -50%); }
-#node5i { top: 85%; left: 63%; background-color: #51445c; transform: translate(-50%, -50%); }
+#node1.moveTop {
+	transform: translateY(100px);
+	background-color: #7811d3;
+}
+
+#node2.moveTopLeft {
+	transform: translateX(140px) translateY(50px);
+	background-color: #7811d3;
+}
+
+#node3.moveTopRight {
+	transform: translateX(-140px) translateY(50px);
+	background-color: #7811d3;
+}
+
+#node4.moveBottomLeft {
+	transform: translateX(115px) translateY(-50px);
+	background-color: #7811d3;
+}
+
+#node5.moveBottomRight {
+	transform: translateX(-115px) translateY(-50px);
+	background-color: #7811d3;
+}
 
 .card {
     background-color: #212121;
