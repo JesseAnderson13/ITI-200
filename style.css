@@ -1,16 +1,45 @@
-.scroll {
-    max-height: 500px;
-    overflow-y: auto;
-    color:#535353;
+body {
+	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
 }
 
-.card{
-    background-color: #1DB954;
+a{
+    color: #b3b3b3;
+}
+
+.row{
+    justify-content: center;
+    margin: 60px; 
+}
+
+.col{
+    justify-content: center;
 }
 
 .col-2{
     background-color: black ;
+}
 
+.navbar {
+	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
+}
+
+/* Bootstrap Button Styles */
+
+.btn-success {
+    background-color: #7811d3;
+	color: #ffffff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #5c07a6;
+}
+
+/* Card Styles */
+
+.card {
+    background-color: #212121;
+    border: none;
 }
 
 .card-body{
@@ -23,38 +52,7 @@
     color: azure;
 }
 
-.row{
-    justify-content: center;
-    margin: 60px; 
-}
-
-.col{
-    justify-content: center;
-}
-
-button{
-    background-color: #121212;
-}
-
-body {
-	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
-}
-
-.navbar {
-	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
-}
-
-h6{
-float: right;
-}
-
-a{
-    color: #b3b3b3;
-}
-
-.about-text{
-    color:white;
-}
+/* Main Page Graph View Styles*/
 
 .graph {
     display: flex;
@@ -119,23 +117,10 @@ a{
 	background-color: #7811d3;
 }
 
-.card {
-    background-color: #212121;
-    border: none;
-}
+/* Text Styles */
 
-.card-body {
-    color: azure;
-}
-
-.btn-success {
-    background-color: #7811d3;
-	color: #ffffff;
-    border: none;
-}
-
-.btn-success:hover {
-    background-color: #5c07a6;
+.about-text{
+    color:white;
 }
 
 .text-muted {
@@ -148,7 +133,7 @@ a{
 
 .cinzel-heading {
 	font-family: "Cinzel", serif;
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: 500;
 	font-style: normal;
 }
@@ -165,4 +150,3 @@ a{
 	font-weight: 500;
 	font-style: normal;
 }
-
