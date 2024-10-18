@@ -1,4 +1,3 @@
-
 document.getElementById("node1").addEventListener("click", function() {
             this.classList.toggle("animateTopNode");
 });
