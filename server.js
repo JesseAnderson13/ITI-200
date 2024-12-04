@@ -31,7 +31,7 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',  
     auth: {
         user: 'streamsyncservice@gmail.com',  
-        pass: 'Andrew$7642' 
+        pass: 'Password' 
     }
 });
 
