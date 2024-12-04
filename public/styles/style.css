@@ -1,0 +1,152 @@
+body {
+	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
+}
+
+a{
+    color: #b3b3b3;
+}
+
+.row{
+    justify-content: center;
+    margin: 60px; 
+}
+
+.col{
+    justify-content: center;
+}
+
+.col-2{
+    background-color: black ;
+}
+
+.navbar {
+	background: linear-gradient(to left, #352a3e, #212529, #352a3e);
+}
+
+/* Bootstrap Button Styles */
+
+.btn-success {
+    background-color: #7811d3;
+	color: #ffffff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #5c07a6;
+}
+
+/* Card Styles */
+
+.card {
+    background-color: #212121;
+    border: none;
+}
+
+.card-body{
+    background-color:#212121;
+    color: azure;
+}
+
+.card-header{
+    background-color:#121212;
+    color: azure;
+}
+
+/* Main Page Graph View Styles*/
+
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.node {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    padding: 5 px;
+    margin: 5px;
+	background-color: #352a3e;
+	transition: transform 0.75s ease, background-color 0.75s ease;
+}
+
+.central {
+    background-color: #7811d3;
+	top: 45%;
+	width: 180px;
+    height: 180px;
+}
+
+#node1 { top: 10%; left: 46%;}
+#node2 { top: 34%; left: 26%;}
+#node3 { top: 34%; left: 66%;}
+#node4 { top: 74%; left: 33%;}
+#node5 { top: 74%; left: 59%;}
+
+#node1.animateTopNode {
+	transform: translateY(100px);
+	background-color: #7811d3;
+}
+
+#node2.animateTopLeftNode {
+	transform: translateX(140px) translateY(50px);
+	background-color: #7811d3;
+}
+
+#node3.animateTopRightNode {
+	transform: translateX(-140px) translateY(50px);
+	background-color: #7811d3;
+}
+
+#node4.animateBottomLeftNode {
+	transform: translateX(80px) translateY(-70px);
+	background-color: #7811d3;
+}
+
+#node5.animateBottomRightNode {
+	transform: translateX(-80px) translateY(-70px);
+	background-color: #7811d3;
+}
+
+/* Text Styles */
+
+.about-text{
+    color:white;
+}
+
+.text-muted {
+    color: #b3b3b3 !important;
+}
+
+.text-success {
+    color: #1DB954 !important;
+}
+
+.cinzel-heading {
+	font-family: "Cinzel", serif;
+	font-size: 32px;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.cinzel-nav-main {
+	font-family: "Cinzel", serif;
+	font-size: 22px;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.cinzel-sub {
+	font-family: "Cinzel", serif;
+	font-weight: 500;
+	font-style: normal;
+}
