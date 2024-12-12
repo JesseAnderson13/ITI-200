@@ -95,9 +95,18 @@ async function search() {
 //active meaning a song is playing or has been playing in the past ~1 minute
 //on some instance of Spotify
 async function play(){
-	console.log('playing');
 	const accessToken = await getAccessToken();
-	console.log(songData.tracks.items[0].uri);
+
+	if(!accessToken){
+		alert("Please authorize with Spotify using the button above!");
+		return;
+	}
+	else if(!songData){
+		alert("Please use the search button to search for the song!");
+		return;
+	}
+
+	const songURI = songData.tracks.items[0].uri;
 	const response = await fetch('https://api.spotify.com/v1/me/player/play', {
 		method: 'PUT',
 		headers: {
@@ -105,7 +114,7 @@ async function play(){
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({
-			uris: [songData.tracks.items[0].uri]
+			uris: [songURI]
 		})
 	});
 }
