@@ -46,11 +46,16 @@
 			<div class="card shadow" style="width: 400px;">
 				<div class="card-body">
 					<div class="text-center m-3">
+						<div class="d-flex justify-content-between">
+							<button class='btn btn-success flex-fill mx-1' onclick='redirToSpotifyAuth()'>Authorize with Spotify</button>
+						</div>
+					</div>
+					<div class="text-center m-3">
 						<input class='text-center' id='YouTubeURL' type='text' value="Enter a link to a song on YouTube!" size="40">
 					</div>
 					<div class="text-center m-3">
 						<div class="d-flex justify-content-between">
-							<button class='btn btn-success flex-fill mx-1' onclick='getYouTubeURL()'>Submit</button>
+							<button class='btn btn-success flex-fill mx-1' onclick='playVideo()'>Submit</button>
 							<button class='btn btn-success flex-fill mx-1' onclick='search()'>Search</button>
 							<button class='btn btn-success flex-fill mx-1' onClick='play()'>Play</button>
 						</div>
