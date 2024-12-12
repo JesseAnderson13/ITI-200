@@ -1,3 +1,4 @@
+//libraries and such
 const { Client } = require("pg");
 const bodyParser = require("body-parser");
 const express = require("express");
@@ -5,9 +6,11 @@ const crypto = require("crypto");
 const querystring = require("querystring")
 const request = require('request');
 
+//create the express app and define port
 const app = express();
 const port = 80;
 
+//data needed by the Spotify API for authentication and operation
 var clientId = 'fe8c98cd9a074e029da8b6c1f839c6f9';
 var clientSecret = 'fe7b49ff15d6455684f11599b7f4ee40'
 var redirectUri = 'http://localhost/callback';
@@ -51,7 +54,8 @@ app.post("/login", async (req, res) => {
     }
 });
 
-app.get('/login', function(req, res) {
+//Spotify Authentication flow
+app.get('/auth', function(req, res) {
     var state = generateRandomString(16);
     var scope = 'user-read-private user-read-email user-modify-playback-state';
     res.redirect('https://accounts.spotify.com/authorize?' +
@@ -65,6 +69,9 @@ app.get('/login', function(req, res) {
     );
 });
 
+//Spotify auth callback, this is where the user is sent after
+//authorizing with Spotify. Sends the access token to the frontend
+//via URL parameters
 app.get('/callback', function (req, res) {
     var code = req.query.code || null;
     var state = req.query.state || null;
@@ -102,7 +109,8 @@ app.get('/callback', function (req, res) {
             if (response.statusCode === 200) {
                 accessToken = body.access_token;
                 console.log('Access Token:', accessToken);
-                res.redirect('/index.html?' + querystring.stringify({ access_token: accessToken }));            } else {
+                res.redirect('/index.html?' + querystring.stringify({ access_token: accessToken }));
+            } else {
                 console.error('Error:', body);
                 res.redirect('/#' +
                     querystring.stringify({
@@ -113,38 +121,14 @@ app.get('/callback', function (req, res) {
     });
 });
   
-
+//uses crypto library to generate a random string
+//used by app.get('/auth' ...)
 const generateRandomString = (length) => {
     return crypto
     .randomBytes(60)
     .toString('hex')
     .slice(0, length);
 }
-
-/*
-app.post('/api/videoData', (req, res) => {
-    const receivedVideoData = req.body;
-    console.log(receivedVideoData.title);
-
-    res.json({ message: "Data received"});
-})
-
-app.get('/api/videoData', async (req, res) => {
-    console.log('test');
-    const query = req.body.title;
-    const type = 'track';
-    const limit = 1;
-    const searchURL = 'https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=${type}&limit=${limit}';
-
-    const response = await fetch(searchURL, {
-        headers: {
-            'Authorization': 'Bearer ${accessToken}'
-        }
-    })
-
-    console.log(response);
-});
-*/
 
 // Start Server
 app.listen(port, () => {
