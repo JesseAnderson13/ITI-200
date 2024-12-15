@@ -60,32 +60,30 @@
 
 			<h3 class="mt-4 cinzel-heading"><i class="bi bi-person-plus-fill"></i> Join Us</h3>
 			<p>Join us on this musical journey! Whether you're a casual listener or a dedicated audiophile, StreamSync has something for everyone. Sign up today and experience music like never before!</p>
+        <h3 class="mt-4 cinzel-heading"><i class="bi bi-envelope-fill"></i> Contact Us</h3>
+        <p>For any inquiries, feel free to reach out using the form below:</p>
 
-			<h3 class="mt-4 cinzel-heading"><i class="bi bi-envelope-fill"></i> Contact Us</h3>
-			<p>For any inquiries, feel free to reach out using the form below:</p>
-
-			<div class="card bg-dark text-white mt-4">
-				<div class="card-body">
-					<h5 class="card-title">Inquiry Form</h5>
-					<form>
-						<div class="mb-3">
-							<label for="name" class="form-label">Name</label>
-							<input type="text" class="form-control" id="name" placeholder="Your Name" required>
-						</div>
-						<div class="mb-3">
-							<label for="email" class="form-label">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-						</div>
-						<div class="mb-3">
-							<label for="message" class="form-label">Message</label>
-							<textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
-						</div>
-						<button type="submit" class="btn btn-success">Send Message</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+        <div class="card bg-dark text-white mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Inquiry Form</h5>
+                <form method="POST" action="/send-inquiry">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
